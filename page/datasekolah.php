@@ -1,6 +1,6 @@
 <table class="table">
     <h4 class="mb-3">#Data Sekolah</h4>
-    <a href="#" class="btn btn-primary btn-sm-3" data-bs-toggle="modal" data-bs-target="#datasekolah">Tambah Data</a>
+    <a href="#" class="btn btn-primary btn-sm col-sm-4" data-bs-toggle="modal" data-bs-target="#datasekolah">Tambah Data</a>
   <thead>
     <tr class="text-center">
       <th scope="col">#</th>
@@ -27,28 +27,38 @@
 
 <!-- Modal -->
 <div class="modal fade" id="datasekolah" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">From Data Sekolah</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-     
-      <div class="row g-3 align-items-center">
-  <div class="col-auto">
-    <label for="inputPassword6" class="col-form-label">Password</label>
-  </div>
-  <div class="col-auto">
-    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-  </div>
 
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+     <!-- from tambah data -->
+     <form>
+        <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nama Sekolah</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="namasekolah">
+        </div>
+        <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Alamat Sekolah</label>
+          <textarea type="password" class="form-control" id="exampleInputPassword1" name="alamat"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">No Telepon</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="notep">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email Sekolah</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+        </div>
+        <div class="Modal-Title">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Simpan</button>
+        </div>
+    </form>
+
     </div>
   </div>
 </div>
